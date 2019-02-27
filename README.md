@@ -67,4 +67,11 @@ Query the list of CITY names from STATION that do not start with vowels. The res
 SELECT DISTINCT city FROM station WHERE city  not RLIKE '^[aeiou]' 
 ```
 
+# File9_SQL
+
+Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+
+```
+SELECT DISTINCT city FROM station WHERE city RLIKE '.*[aeiou]$' = 0
+```
 
