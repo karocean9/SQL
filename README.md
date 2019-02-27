@@ -61,7 +61,7 @@ here RLIKE is a regular expression
 
 # File8_SQL
 
-Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+Query the list of CITY names from STATION that do not start with vowels. The result cannot contain duplicates.
 
 ```
 SELECT DISTINCT city FROM station WHERE city  not RLIKE '^[aeiou]' 
