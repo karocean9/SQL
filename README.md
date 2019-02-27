@@ -24,7 +24,7 @@ Let N be the number of CITY entries in STATION, and let N~ be the number of dist
 ```
 SELECT count(CITY) - count(distinct city) from STATION 
 ```
-# File4_SQl
+# File4_SQL
 
 Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
 
