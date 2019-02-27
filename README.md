@@ -17,3 +17,10 @@ The STATION Table is given in the files with the name STATION.png
 ```
 select distinct city from STATION where ID % 2 = 0 
 ```
+# File3_SQL
+
+Let N be the number of CITY entries in STATION, and let N~ be the number of distinct CITY names in STATION; query the value of N-N~ from STATION. In other words, find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+
+```
+SELECT count(CITY) - count(distinct city) from STATION 
+```
