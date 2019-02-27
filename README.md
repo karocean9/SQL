@@ -84,3 +84,5 @@ The STUDENTS table is given in the files as STUDENTS.png
 ```
 select  name from STUDENTS where Marks > 75 ORDER BY  RIGHT(name, 3), ID ASC
 ```
+Here order by right means order the characters from right and the number defines last 3 characters and ASC means ascending order.
+
