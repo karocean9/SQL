@@ -50,3 +50,12 @@ Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Yo
 select distinct city from STATION where city like '%A' or city like '%E' or city like '%I' or city like '%O' or city like '%U' 
 ```
 
+# File7_SQL
+
+Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+
+```
+SELECT DISTINCT city FROM station WHERE city RLIKE '^[aeiou].*[aeiou]$'
+```
+here RLIKE is a regular expression
+
