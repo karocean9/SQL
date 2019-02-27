@@ -41,3 +41,12 @@ Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from 
 ```
 select distinct city from STATION where city like 'A%' or city like 'E%' or city like 'I%' or city like 'O%' or city like 'U%'
 ```
+
+# File6_SQL
+
+Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+
+```
+select distinct city from STATION where city like '%A' or city like '%E' or city like '%I' or city like '%O' or city like '%U' 
+```
+
