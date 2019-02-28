@@ -86,3 +86,20 @@ select  name from STUDENTS where Marks > 75 ORDER BY  RIGHT(name, 3), ID ASC
 ```
 Here order by right means order the characters from right and the number defines last 3 characters and ASC means ascending order.
 
+# File11_SQL
+
+Write a query identifying the type of each record in the TRIANGLES table using its three side lengths. Output one of the following statements for each record in the table:
+
+Equilateral: It's a triangle with  sides of equal length.
+Isosceles: It's a triangle with  sides of equal length.
+Scalene: It's a triangle with  sides of differing lengths.
+Not A Triangle: The given values of A, B, and C don't form a triangle.
+
+The table for this is given as TRIANGLE.jpg
+
+```
+SELECT CASE WHEN A + B > C AND A + C > B AND B + C > A THEN CASE WHEN A = B AND B = C THEN 'Equilateral' WHEN A = B OR B = C OR A = C THEN 'Isosceles' WHEN A != B OR B != C OR A != C THEN 'Scalene' END ELSE 'Not A Triangle' END FROM TRIANGLES;
+```
+Here A, B and C are the sides of a triangle.
+
+
