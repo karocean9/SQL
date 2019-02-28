@@ -95,7 +95,7 @@ Isosceles: It's a triangle with  sides of equal length.
 Scalene: It's a triangle with  sides of differing lengths.
 Not A Triangle: The given values of A, B, and C don't form a triangle.
 
-The table for this is given as TRIANGLE.jpg
+The table for this is given as TRIANGLES.jpg
 
 ```
 SELECT CASE WHEN A + B > C AND A + C > B AND B + C > A THEN CASE WHEN A = B AND B = C THEN 'Equilateral' WHEN A = B OR B = C OR A = C THEN 'Isosceles' WHEN A != B OR B != C OR A != C THEN 'Scalene' END ELSE 'Not A Triangle' END FROM TRIANGLES;
